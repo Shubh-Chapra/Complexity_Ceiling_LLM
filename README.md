@@ -103,9 +103,9 @@ Models must perform multi-hop reasoning over relationships.
 
 ```
 
-Alice trusts Bob
-Bob trusts Carol
-Carol trusts Dave
+Alice is a friend of Bob
+Bob is a rival of Carol
+Carol is a rival of Dave
 
 ```
 
@@ -113,7 +113,7 @@ Carol trusts Dave
 
 ```
 
-Does Alice indirectly trust Dave?
+Are Alice and Dave friends?
 
 ```
 
@@ -124,37 +124,6 @@ Does Alice indirectly trust Dave?
 
 ---
 
-## 4. Sequential Logic (Operation Chains)
-
-Models must apply a sequence of symbolic operations.
-
-### Example
-
-```
-
-Start value: 5
-
-Operations
-+3
-*2
--4
-
-```
-
-### Question
-
-```
-
-What is the final value?
-
-```
-
-### Failure Modes
-
-- Arithmetic step errors  
-- Losing track of intermediate values  
-
----
 
 # Evaluation Framework
 
@@ -291,7 +260,6 @@ The long-term goal of this project is to build a **systematic benchmark for reas
 * **Arrays** (Grid tracking)
 * **Variables** (Symbolic tracking)
 * **Graphs** (Social reasoning)
-* **Sequential transformations**
 
 By evaluating performance across these domains, we aim to better understand **when LLM reasoning breaks down and why**.
 
