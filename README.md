@@ -1,61 +1,82 @@
-Complexity Ceiling in Large Language Models
+Here is your README converted into **proper GitHub Markdown with headings (`#`) and subheadings (`##`, `###`)** so it will render correctly on GitHub.
 
-This project studies the limits of reasoning ability in Large Language Models (LLMs) by evaluating their performance on structured multi-step reasoning tasks.
+You can **copy-paste this directly into `README.md`**.
 
-The central hypothesis is that LLMs exhibit a complexity ceiling: as the number of reasoning steps increases, models begin to fail systematically due to limitations in state tracking, compositional reasoning, or constraint propagation.
+---
 
-To investigate this, we design synthetic reasoning domains where the correct solution can be automatically generated and automatically verified.
+```markdown
+# Complexity Ceiling in Large Language Models
 
-Motivation
+This project studies the limits of reasoning ability in **Large Language Models (LLMs)** by evaluating their performance on structured multi-step reasoning tasks.
 
-LLMs often appear capable of complex reasoning when prompted with step-by-step instructions. However, it is unclear whether they truly perform algorithmic reasoning or simply rely on pattern matching and shallow heuristics.
+The central hypothesis is that **LLMs exhibit a complexity ceiling**: as the number of reasoning steps increases, models begin to fail systematically due to limitations in state tracking, compositional reasoning, or constraint propagation.
+
+To investigate this, we design **synthetic reasoning domains** where the correct solution can be **automatically generated and automatically verified**.
+
+---
+
+# Motivation
+
+LLMs often appear capable of complex reasoning when prompted with step-by-step instructions. However, it is unclear whether they truly perform **algorithmic reasoning** or simply rely on **pattern matching and shallow heuristics**.
 
 This repository provides a framework to test reasoning limits by:
 
-Automatically generating reasoning tasks
+- Automatically generating reasoning tasks
+- Querying LLMs for solutions
+- Automatically verifying correctness
+- Measuring performance as reasoning complexity increases
 
-Querying LLMs for solutions
+The goal is to **identify where and why reasoning failures occur**.
 
-Automatically verifying correctness
+---
 
-Measuring performance as reasoning complexity increases
-
-The goal is to identify where and why reasoning failures occur.
-
-Reasoning Domains
+# Reasoning Domains
 
 The benchmark currently includes multiple reasoning domains, each targeting a different structural form of reasoning.
 
-1. Alien Grid (Spatial State Tracking)
+---
+
+## 1. Alien Grid (Spatial State Tracking)
 
 Models must track the state of a grid after sequential transformations.
 
-Example:
+### Example
 
-Initial grid
+**Initial grid**
+
+```
 
 1 2 3
 4 5 6
 7 8 9
 
-Operations
+```
+
+**Operations**
+
+```
 
 rotate_row_1_right
 swap_column_1_3
 
-The model must compute the final grid state.
+```
 
-Failure mode:
+The model must compute the **final grid state**.
 
-Losing track of intermediate spatial states
+### Failure Modes
 
-Applying transformations in the wrong order
+- Losing track of intermediate spatial states  
+- Applying transformations in the wrong order  
 
-2. Symbolic Tracking (Variable State Updates)
+---
+
+## 2. Symbolic Tracking (Variable State Updates)
 
 Models must track variables that change over time.
 
-Example
+### Example
+
+```
 
 A = 2
 B = 3
@@ -64,41 +85,59 @@ Step1: C = A + B
 Step2: A = C * 2
 Step3: B = A - 1
 
-Question
+```
+
+### Question
+
+```
 
 What are the final values of A, B, and C?
 
-Failure mode:
+```
 
-Forgetting earlier assignments
+### Failure Modes
 
-Confusing variable bindings
+- Forgetting earlier assignments  
+- Confusing variable bindings  
 
-3. Social Logic (Graph Reasoning)
+---
+
+## 3. Social Logic (Graph Reasoning)
 
 Models must perform multi-hop reasoning over relationships.
 
-Example
+### Example
+
+```
 
 Alice trusts Bob
 Bob trusts Carol
 Carol trusts Dave
 
-Question
+```
+
+### Question
+
+```
 
 Does Alice indirectly trust Dave?
 
-Failure mode:
+```
 
-Multi-hop inference collapse
+### Failure Modes
 
-Hallucinating missing links
+- Multi-hop inference collapse  
+- Hallucinating missing links  
 
-4. Sequential Logic (Operation Chains)
+---
+
+## 4. Sequential Logic (Operation Chains)
 
 Models must apply a sequence of symbolic operations.
 
-Example
+### Example
+
+```
 
 Start value: 5
 
@@ -107,61 +146,88 @@ Operations
 *2
 -4
 
-Question
+```
+
+### Question
+
+```
 
 What is the final value?
 
-Failure mode:
+```
 
-Arithmetic step errors
+### Failure Modes
 
-Losing track of intermediate values
+- Arithmetic step errors  
+- Losing track of intermediate values  
 
-Evaluation Framework
+---
+
+# Evaluation Framework
 
 Each domain follows the same evaluation pipeline.
 
-1. Automatic Task Generation
+---
+
+## 1. Automatic Task Generation
 
 Tasks are generated programmatically to control reasoning depth.
 
 Example parameter
 
+```
+
 number_of_steps = 5
-2. Model Query
+
+````
+
+---
+
+## 2. Model Query
 
 The prompt is sent to the LLM.
 
 Example models:
 
-GPT
+- GPT
+- Gemini
+- Claude
 
-Gemini
+---
 
-Claude
+## 3. Automatic Verification
 
-3. Automatic Verification
-
-The system computes the true answer programmatically and compares it with the model's output.
+The system computes the **true answer programmatically** and compares it with the model's output.
 
 Example output format
 
+```json
 {
   "model_answer": "...",
   "correct_answer": "...",
   "correct": true
 }
-4. Complexity Analysis
+````
+
+---
+
+## 4. Complexity Analysis
 
 Performance is analyzed as a function of reasoning depth.
 
 Example metric
 
+```
 Accuracy vs reasoning steps
+```
 
-This allows us to detect the complexity ceiling.
+This allows us to detect the **complexity ceiling**.
 
-Repository Structure
+---
+
+# Repository Structure
+
+```
 Complexity_Ceiling_LLM/
 
 alien_grid/
@@ -183,62 +249,72 @@ normal_easy_seq/
 multi_model_evaluator.py
 results_social_logic.json
 README.md
-Running Experiments
+```
+
+---
+
+# Running Experiments
 
 Example usage
 
+```bash
 python multi_model_evaluator.py
+```
 
 This will:
 
-Generate reasoning tasks
+1. Generate reasoning tasks
+2. Query the selected LLM
+3. Evaluate correctness
+4. Save results to JSON
 
-Query the selected LLM
+---
 
-Evaluate correctness
-
-Save results to JSON
-
-Example Output
+# Example Output
 
 Example result
 
+```json
 {
   "task_id": 12,
   "model": "gemini-2.5-flash",
   "steps": 5,
   "correct": false
 }
+```
 
 Aggregated results can be used to produce plots such as:
 
+```
 Reasoning Steps vs Accuracy
-Research Goal
+```
 
-The long-term goal of this project is to build a systematic benchmark for reasoning limits in LLMs, covering different computational structures:
+---
 
-Arrays (Grid tracking)
+# Research Goal
 
-Variables (Symbolic tracking)
+The long-term goal of this project is to build a **systematic benchmark for reasoning limits in LLMs**, covering different computational structures:
 
-Graphs (Social reasoning)
+* **Arrays** (Grid tracking)
+* **Variables** (Symbolic tracking)
+* **Graphs** (Social reasoning)
+* **Sequential transformations**
 
-Sequential transformations
+By evaluating performance across these domains, we aim to better understand **when LLM reasoning breaks down and why**.
 
-By evaluating performance across these domains, we aim to better understand when LLM reasoning breaks down and why.
+---
 
-Future Work
+# Future Work
 
 Planned extensions include:
 
-Hierarchical reasoning (tree structures)
+* Hierarchical reasoning (tree structures)
+* Temporal causality tracking
+* Constraint propagation tasks
+* Recursive reasoning tasks
 
-Temporal causality tracking
+---
 
-Constraint propagation tasks
+# Author
 
-Recursive reasoning tasks
-
-Author
-
-Shubh Chapra
+**Shubh Chapra**
