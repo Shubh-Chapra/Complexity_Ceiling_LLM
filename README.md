@@ -1,76 +1,311 @@
-Mapping the Complexity Ceiling in LLMs 🧠📉
+# Complexity Ceiling in Large Language Models
 
-Algorithmic Trace Verification of State-Drift in Large Language Models
+This project studies the limits of reasoning ability in **Large Language Models (LLMs)** by evaluating their performance on structured multi-step reasoning tasks.
 
-Overview
+The central hypothesis is that **LLMs exhibit a complexity ceiling**: as the number of reasoning steps increases, models begin to fail systematically due to limitations in state tracking, compositional reasoning, or constraint propagation.
 
-Current Large Language Models (LLMs) demonstrate exceptional surface-level intelligence and pattern matching. However, when forced to execute strict, multi-step sequential tasks (Depth $N$), errors inevitably accumulate. This research investigates the "Complexity Ceiling" of autoregressive models—the exact point at which an LLM's internal state-tracking collapses.
+To investigate this, we design **synthetic reasoning domains** where the correct solution can be **automatically generated and automatically verified**.
 
-Instead of merely evaluating the final answer, this repository introduces Algorithmic Trace Verification. By forcing the model to output intermediate states, we can algorithmically pinpoint the exact step where logic degrades across different cognitive domains.
+---
 
-Repository Structure
+# Motivation
 
-Based on our multi-domain benchmark methodology, the repository is organized into distinct reasoning challenges:
+LLMs often appear capable of complex reasoning when prompted with step-by-step instructions. However, it is unclear whether they truly perform **algorithmic reasoning** or simply rely on **pattern matching and shallow heuristics**.
 
+This repository provides a framework to test reasoning limits by:
+
+- Automatically generating reasoning tasks
+- Querying LLMs for solutions
+- Automatically verifying correctness
+- Measuring performance as reasoning complexity increases
+
+The goal is to **identify where and why reasoning failures occur**.
+
+---
+
+# Reasoning Domains
+
+The benchmark currently includes multiple reasoning domains, each targeting a different structural form of reasoning.
+
+---
+
+## 1. Alien Grid (Spatial State Tracking)
+
+Models must track the state of a grid after sequential transformations.
+
+### Example
+
+**Initial grid**
+
+```
+
+1 2 3
+4 5 6
+7 8 9
+
+```
+
+**Operations**
+
+```
+
+rotate_row_1_right
+swap_column_1_3
+
+```
+
+The model must compute the **final grid state**.
+
+### Failure Modes
+
+- Losing track of intermediate spatial states  
+- Applying transformations in the wrong order  
+
+---
+
+## 2. Symbolic Tracking (Variable State Updates)
+
+Models must track variables that change over time.
+
+### Example
+
+```
+
+A = 2
+B = 3
+
+Step1: C = A + B
+Step2: A = C * 2
+Step3: B = A - 1
+
+```
+
+### Question
+
+```
+
+What are the final values of A, B, and C?
+
+```
+
+### Failure Modes
+
+- Forgetting earlier assignments  
+- Confusing variable bindings  
+
+---
+
+## 3. Social Logic (Graph Reasoning)
+
+Models must perform multi-hop reasoning over relationships.
+
+### Example
+
+```
+
+Alice trusts Bob
+Bob trusts Carol
+Carol trusts Dave
+
+```
+
+### Question
+
+```
+
+Does Alice indirectly trust Dave?
+
+```
+
+### Failure Modes
+
+- Multi-hop inference collapse  
+- Hallucinating missing links  
+
+---
+
+## 4. Sequential Logic (Operation Chains)
+
+Models must apply a sequence of symbolic operations.
+
+### Example
+
+```
+
+Start value: 5
+
+Operations
++3
+*2
+-4
+
+```
+
+### Question
+
+```
+
+What is the final value?
+
+```
+
+### Failure Modes
+
+- Arithmetic step errors  
+- Losing track of intermediate values  
+
+---
+
+# Evaluation Framework
+
+Each domain follows the same evaluation pipeline.
+
+---
+
+## 1. Automatic Task Generation
+
+Tasks are generated programmatically to control reasoning depth.
+
+Example parameter
+
+```
+
+number_of_steps = 5
+
+````
+
+---
+
+## 2. Model Query
+
+The prompt is sent to the LLM.
+
+Example models:
+
+- GPT
+- Gemini
+- Claude
+
+---
+
+## 3. Automatic Verification
+
+The system computes the **true answer programmatically** and compares it with the model's output.
+
+Example output format
+
+```json
+{
+  "model_answer": "...",
+  "correct_answer": "...",
+  "correct": true
+}
+````
+
+---
+
+## 4. Complexity Analysis
+
+Performance is analyzed as a function of reasoning depth.
+
+Example metric
+
+```
+Accuracy vs reasoning steps
+```
+
+This allows us to detect the **complexity ceiling**.
+
+---
+
+# Repository Structure
+
+```
 Complexity_Ceiling_LLM/
-├── alien_grid/              # Spatial state-tracking (2D grid coordinate transformations)
-├── normal_easy_seq/         # Baseline sequential tasks (O(N) arithmetic & string logic)
-├── social_logic/            # Relational tracking (Recursive transitive graph logic)
-├── symbolic_tracking/       # Pointer-chasing (Abstract variables & modulo arithmetic)
-├── multi_model_evaluator.py # Unified evaluator for Gemini, OpenAI, and OpenRouter models
-├── results_social_logic.json# Example output data containing algorithmic trace results
-└── README.md
 
+alien_grid/
+    grid_generator.py
+    grid_evaluator.py
 
-The Reasoning Domains
+symbolic_tracking/
+    symbolic_generator.py
+    symbolic_evaluator.py
 
-This benchmark stress-tests models across fundamentally orthogonal data structures:
+social_logic/
+    social_generator.py
+    social_evaluator.py
 
-Spatial Tracking (alien_grid): Tests 2D spatial orientation. The model tracks a 3x3 grid through $N$ rotations and swaps.
+normal_easy_seq/
+    sequence_generator.py
+    sequence_evaluator.py
 
-Symbolic Tracking (symbolic_tracking): Tests pure working memory. The model tracks 7 distinct variables through $N$ cyclic shifts and arithmetic dependencies.
+multi_model_evaluator.py
+results_social_logic.json
+README.md
+```
 
-Relational Logic (social_logic): Tests graph-based memory. The model tracks diplomatic alliances based on transitive rules (e.g., "the rival of my rival is my friend").
+---
 
-Baseline Sequential (normal_easy_seq): Evaluates standard linear composition limits (e.g., sequential arithmetic).
+# Running Experiments
 
-Evaluation Methodology
+Example usage
 
-This project does not just grade final answers. It evaluates the journey:
-
-Dataset Generators: Python scripts generate $N$-depth prompts and calculate the exact mathematical state at every intermediate step (the Expected Trace).
-
-LLM Inference: The model is prompted to output its state in a strict, ultra-concise format (e.g., Step 14: [A, B, C...]).
-
-Trace Verification: Evaluator scripts use Regex to extract the model's arrays, comparing them to the Expected Trace to find the Exact Point of Failure (e.g., Accuracy: 0% | Avg Failure Point: Step 16).
-
-Getting Started
-
-Prerequisites
-
-Install the required SDKs for model evaluation:
-
-pip install google-genai openai
-
-
-Running an Evaluation
-
-Clone the repository:
-
-git clone [https://github.com/Shubh-Chapra/Complexity_Ceiling_LLM.git](https://github.com/Shubh-Chapra/Complexity_Ceiling_LLM.git)
-cd Complexity_Ceiling_LLM
-
-
-Navigate into a specific domain folder to generate a benchmark dataset (e.g., cd symbolic_tracking and run the generator).
-
-Insert your API keys (Google, OpenAI, or OpenRouter) into the evaluator script.
-
-Run the multi-model evaluator:
-
+```bash
 python multi_model_evaluator.py
+```
+
+This will:
+
+1. Generate reasoning tasks
+2. Query the selected LLM
+3. Evaluate correctness
+4. Save results to JSON
+
+---
+
+# Example Output
+
+Example result
+
+```json
+{
+  "task_id": 12,
+  "model": "gemini-2.5-flash",
+  "steps": 5,
+  "correct": false
+}
+```
+
+Aggregated results can be used to produce plots such as:
+
+```
+Reasoning Steps vs Accuracy
+```
+
+---
+
+# Research Goal
+
+The long-term goal of this project is to build a **systematic benchmark for reasoning limits in LLMs**, covering different computational structures:
+
+* **Arrays** (Grid tracking)
+* **Variables** (Symbolic tracking)
+* **Graphs** (Social reasoning)
+* **Sequential transformations**
+
+By evaluating performance across these domains, we aim to better understand **when LLM reasoning breaks down and why**.
 
 
-Author
+# Future Work
 
-Shubh Chapra
-Research Artifact for SOP & Complexity Analysis
+Planned extensions include:
+
+* Hierarchical reasoning (tree structures)
+* Temporal causality tracking
+* Constraint propagation tasks
+* Recursive reasoning tasks
+
+
+# Author
+
+**Shubh Chapra**
