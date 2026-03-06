@@ -1,0 +1,122 @@
+[
+    {
+        "depth": 5,
+        "ground_truth": "FINAL VALUE: 3",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **INCREMENT_ALL**\n    A = (1 + 1) mod 10 = 2\n    B = (2 + 1) mod 10 = 3\n    C = (3 + 1) mod 10 = 4\n    D = (4 + 1) mod 10 = 5\n    E = (5 + 1) mod 10 = 6\n    F = (6 + 1) mod 10 = 7\n    G = (7 + 1) mod 10 = 8\n    State after step 1: A=2, B=3, C=4, D=5, E=6, F=7, G=8\n\n2.  **SWAP_C_D**\n    C becomes 5 (old D)",
+        "is_correct": false
+    },
+    {
+        "depth": 5,
+        "ground_truth": "FINAL VALUE: 2",
+        "model_output": "Initial State:\nA=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **SWAP_",
+        "is_correct": false
+    },
+    {
+        "depth": 10,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **INCREMENT_ALL",
+        "is_correct": false
+    },
+    {
+        "depth": 10,
+        "ground_truth": "FINAL VALUE: 9",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SHIFT_RIGHT\n   A becomes",
+        "is_correct": false
+    },
+    {
+        "depth": 15,
+        "ground_truth": "FINAL VALUE: 6",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **SHIFT_LEFT**",
+        "is_correct": false
+    },
+    {
+        "depth": 15,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State:\nA=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **SET_D_TO",
+        "is_correct": false
+    },
+    {
+        "depth": 20,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SWAP_A_",
+        "is_correct": false
+    },
+    {
+        "depth": 20,
+        "ground_truth": "FINAL VALUE: 0",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **SET_D_TO",
+        "is_correct": false
+    },
+    {
+        "depth": 25,
+        "ground_truth": "FINAL VALUE: 3",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SWAP_A_G",
+        "is_correct": false
+    },
+    {
+        "depth": 25,
+        "ground_truth": "FINAL VALUE: 3",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  SWAP_C",
+        "is_correct": false
+    },
+    {
+        "depth": 30,
+        "ground_truth": "FINAL VALUE: 7",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **SHIFT_RIGHT**",
+        "is_correct": false
+    },
+    {
+        "depth": 30,
+        "ground_truth": "FINAL VALUE: 3",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  INCREMENT_ALL\n    A",
+        "is_correct": false
+    },
+    {
+        "depth": 35,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  SET_D_TO_",
+        "is_correct": false
+    },
+    {
+        "depth": 35,
+        "ground_truth": "FINAL VALUE: 9",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SHIFT_LEFT",
+        "is_correct": false
+    },
+    {
+        "depth": 40,
+        "ground_truth": "FINAL VALUE: 4",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n[1, 2, 3,",
+        "is_correct": false
+    },
+    {
+        "depth": 40,
+        "ground_truth": "FINAL VALUE: 8",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  **REVERSE_",
+        "is_correct": false
+    },
+    {
+        "depth": 45,
+        "ground_truth": "FINAL VALUE: 4",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SHIFT_LEFT",
+        "is_correct": false
+    },
+    {
+        "depth": 45,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1. SET_D_TO_",
+        "is_correct": false
+    },
+    {
+        "depth": 50,
+        "ground_truth": "FINAL VALUE: 9",
+        "model_output": "Initial State:\nA=1, B=2, C=3, D=4, E=5, F=6, G=7\nCurrent State: [1,",
+        "is_correct": false
+    },
+    {
+        "depth": 50,
+        "ground_truth": "FINAL VALUE: 0",
+        "model_output": "Initial State: A=1, B=2, C=3, D=4, E=5, F=6, G=7\n\n1.  SWAP_A_",
+        "is_correct": false
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "depth": 25,
+        "ground_truth": "RELATIONSHIP: FRIENDS",
+        "model_output": "Here's a step-by-step breakdown of the alliances formed, followed by the final relationship status between Alice and David:\n\n**Initial State:** All 6 people are neutral to each other.\n\n**Event 1: Charlie and Eve become FRIENDS.**\nNEW ALLIANCE: Charlie and Eve are FRIENDS (Reason: Direct event: Charlie F Eve)\n--------------------\n\n**Event 2: David and Eve become RIVALS.**\nNEW ALLIANCE: David and Eve are RIVALS (Reason: Direct event: David R Eve)\nNEW ALLIANCE: Charlie and David are RIVALS (Reason: Charlie F Eve & Eve R David)\n--------------------\n*(Current inferred: (Charlie, Eve) F, (David, Eve) R, (",
+        "is_correct": false
+    },
+    {
+        "depth": 30,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Let's track the relationships and their changes. The rules are:\n1. Friendship is transitive.\n2. The rival of my rival is my friend.\n3. The rival of my friend is my rival.\n4. All relationships are symmetric.\n\nWe will keep track of `global_relationships` where each pair of people `(P1, P2)` can be 'FRIEND', 'RIVAL', or 'NEUTRAL'. If a relationship changes from NEUTRAL or from the opposite type (FRIEND to RIVAL, or RIVAL to FRIEND), it counts as a \"new alliance formed\".\n\nLet's represent the relationships in a canonical way, e.g., `frozenset({person1, person2}): status`.\nWhen propagating, we need to handle",
+        "is_correct": false
+    },
+    {
+        "depth": 30,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Here's a step-by-step breakdown of the relationships and new alliances formed:\n\nInitial State: All 6 people are neutral to each other.\n\n1.  **Frank and Charlie become FRIENDS.**\n    *   New alliances: (Frank, Charlie) are FRIENDS.\n    *   Current FRIENDS: (Frank, Charlie)\n    *   Current RIVALS: None\n\n2.  **Alice and Eve become RIVALS.**\n    *   New alliances: (Alice, Eve) are RIVALS.\n    *   Current FRIENDS: (Frank, Charlie)\n    *   Current RIVALS: (Alice, Eve)\n\n3.  **Alice and Charlie become RIVALS.**\n    *   Alice R Charlie (",
+        "is_correct": false
+    },
+    {
+        "depth": 35,
+        "ground_truth": "RELATIONSHIP: FRIENDS",
+        "model_output": "Let's track the relationships and new alliances as they form. I will denote Friend as 'F' and Rival as 'R'. 'N' is Neutral.\n\nInitial State: All 6 people are neutral to each other.\n\nRules in effect:\n1.  Friendship is transitive: X F Y, Y F Z => X F Z\n2.  Rival of my rival is my friend: X R Y, Y R Z => X F Z\n3.  Rival of my friend is my rival: X F Y, Y R Z => X R Z\n4.  All relationships are symmetric.\n\nLet's maintain the current state of relationships. For brevity, I'll only list the relationships that are not Neutral.\n\n**Event 1: Eve",
+        "is_correct": false
+    },
+    {
+        "depth": 35,
+        "ground_truth": "RELATIONSHIP: FRIENDS",
+        "model_output": "Here's a step-by-step breakdown of the relationships:\n\nInitial State: All 6 people are neutral to each other.\n\n1.  **Alice and Bob become RIVALS.**\n    *   Alice and Bob become RIVALS (Direct event 1)\n2.  **Bob and Eve become RIVALS.**\n    *   Bob and Eve become RIVALS (Direct event 2)\n    *   Alice and Eve become FRIENDS (Rival of Alice's rival Bob is Eve)\n3.  **Charlie and Bob become FRIENDS.**\n    *   Charlie and Bob become FRIENDS (Direct event 3)\n    *   Alice and Charlie become RIVALS (Rival of Alice's friend Bob is Charlie)",
+        "is_correct": false
+    },
+    {
+        "depth": 40,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Let's track the relationships and propagate them according to the rules.\n`F`: Friend, `R`: Rival, `N`: Neutral\n\nRules:\n1. `F(X,Y) & F(Y,Z) => F(X,Z)`\n2. `R(X,Y) & R(Y,Z) => F(X,Z)` (Rival of my rival is my friend)\n3. `F(X,Y) & R(Y,Z) => R(X,Z)` (Rival of my friend is my rival)\n4. All relationships are symmetric.\n\nWe'll list only *new* alliances formed at each step.\n\nInitial State: All neutral.\n\n**1. Charlie and Bob become",
+        "is_correct": false
+    },
+    {
+        "depth": 40,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Here's a step-by-step breakdown of the events and the alliances formed:\n\nInitial State: All 6 people are neutral to each other.\n\n1.  Charlie and Alice become FRIENDS.\n    *   Charlie and Alice become FRIENDS.\n    *   **New alliances formed:** Charlie and Alice become FRIENDS.\n2.  Alice and David become RIVALS.\n    *   No new alliances formed.\n3.  David and Charlie become RIVALS.\n    *   No new alliances formed.\n4.  Charlie and Frank become FRIENDS.\n    *   Charlie and Frank become FRIENDS.\n    *   Alice and Charlie are FRIENDS, Charlie and Frank are FRIENDS => Alice and Frank become FRIENDS (Rule 1).",
+        "is_correct": false
+    },
+    {
+        "depth": 45,
+        "ground_truth": "RELATIONSHIP: FRIENDS",
+        "model_output": "Here's a step-by-step breakdown of the relationships and new alliances formed:\n\nInitial State: All 6 people are neutral to each other.\n\n1.  **Charlie and Eve become FRIENDS.**\n    New Alliances: (Charlie, Eve)\n\n2.  **Eve and Alice become FRIENDS.**\n    New Alliances: (Eve, Alice)\n    Chain: Charlie is friends with Eve, Eve is friends with Alice => Charlie is friends with Alice.\n    New Alliances: (Charlie, Alice)\n\n3.  **Bob and Frank become FRIENDS.**\n    New Alliances: (Bob, Frank)\n\n4.  **Eve and Frank become FRIENDS.**\n    New Alliances: (Eve, Frank)\n    Chain: Eve",
+        "is_correct": false
+    },
+    {
+        "depth": 45,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "**Initial State:** All 6 people are neutral to each other.\n\n---\n**Event 1: David and Eve become FRIENDS.**\nNew alliance: (David, Eve, FRIENDS)\nDavid and Eve become FRIENDS.\n---\n**Event 2: Frank and Charlie become RIVALS.**\nNew alliance: (Charlie, Frank, RIVALS)\nFrank and Charlie become RIVALS.\n---\n**Event 3: Alice and Charlie become FRIENDS.**\nNew alliance: (Alice, Charlie, FRIENDS)\nAlice and Charlie become FRIENDS.\nThrough (Alice,Charlie) FRIENDS and (Charlie,Frank) RIVALS => (Alice,Frank) RIVALS (Rule 3)\nNew alliance: (Alice, Frank",
+        "is_correct": false
+    },
+    {
+        "depth": 50,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Here's a step-by-step breakdown of the relationships, highlighting only new alliances formed in each event:\n\nInitial State: All 6 people are neutral to each other.\n\n1.  **Event 1: Bob and Frank become FRIENDS.**\n    Bob and Frank become FRIENDS\n2.  **Event 2: Charlie and Alice become RIVALS.**\n    Charlie and Alice become RIVALS\n3.  **Event 3: Frank and David become FRIENDS.**\n    Frank and David become FRIENDS\n    David and Bob become FRIENDS (Transitivity: David-F-Frank, Frank-F-Bob => David-F-Bob)\n4.  **Event 4: Charlie and David become RIVALS.**\n    Charlie and David become",
+        "is_correct": false
+    },
+    {
+        "depth": 50,
+        "ground_truth": "RELATIONSHIP: RIVALS",
+        "model_output": "Here's a step-by-step breakdown of the alliances formed:\n\nInitial State: All 6 people are neutral to each other.\n\n1. Eve and Alice become FRIENDS.\n   - Alice and Eve are now FRIENDS\n\n2. Charlie and David become RIVALS.\n   - Charlie and David are now RIVALS\n\n3. Eve and David become FRIENDS.\n   - Eve and David are now FRIENDS\n   - Alice and David are now FRIENDS (Due to Alice F Eve, Eve F David => Alice F David)\n\n4. Eve and Bob become RIVALS.\n   - Eve and Bob are now RIVALS\n   - Alice and Bob are now RIVALS (Due to Alice F Eve, Eve R Bob => Alice",
+        "is_correct": false
+    }
+]

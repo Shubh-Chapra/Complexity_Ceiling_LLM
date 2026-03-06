@@ -1,0 +1,56 @@
+[
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 48 - 5. Output only the final number.",
+        "ground_truth": "43",
+        "model_output": "43",
+        "is_correct": true
+    },
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 34 - 4. Output only the final number.",
+        "ground_truth": "30",
+        "model_output": "30",
+        "is_correct": true
+    },
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 21 + 15. Output only the final number.",
+        "ground_truth": "36",
+        "model_output": "36",
+        "is_correct": true
+    },
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 29 + 2. Output only the final number.",
+        "ground_truth": "31",
+        "model_output": "31",
+        "is_correct": true
+    },
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 50 + 5. Output only the final number.",
+        "ground_truth": "55",
+        "model_output": "55",
+        "is_correct": true
+    },
+    {
+        "task_type": "sequential_arithmetic",
+        "complexity_class": "O(N)",
+        "depth": 1,
+        "prompt": "Calculate the exact result of this sequence: 45 + 1. Output only the final number.",
+        "ground_truth": "46",
+        "model_output": "46",
+        "is_correct": true
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "depth": 5,
+        "ground_truth": "FINAL VALUE: 5",
+        "model_output": "Initial State: [1, 2, 3, 4, 5, 6, 7]\n\n1. SHIFT_RIGHT\n   G's value moves to A, A to B, B to C, C to D, D to E, E to F, F to G.\n   Current A=1, B=2, C=3, D=4, E=5, F=6, G=7\n   New A=7, New B=1, New C=2, New D=3, New E=4, New F=5, New G=6\n   Step 1: [7, 1, 2, 3, 4, 5, 6]\n\n2. SWAP_A_G\n   Exchange values of A and G.\n   Current A=7, G=6\n   New A=6, New G=7\n   Step 2: [6, 1, 2, 3, 4, 5, 7]\n\n3. SET_D_TO_A_PLUS_B\n   Update D to (A + B) mod 10.\n   Current A=6, B=1\n   New D = (6 + 1) mod 10 = 7\n   Step 3: [6, 1, 2, 7, 4, 5, 7]\n\n4. REVERSE_ALL\n   A <-> G, B <-> F, C <-> E, D remains.\n   Current A=6, B=1, C=2, D=7, E=4, F=5, G=7\n   New A=7 (from G), New B=5 (from F), New C=4 (from E), D=7, New E=2 (from C), New F=1 (from B), New G=6 (from A)\n   Step 4: [7, 5, 4, 7, 2, 1, 6]\n\n5. INCREMENT_ALL\n   Add 1 to all values (modulo 10).\n   Current A=7, B=5, C=4, D=7, E=2, F=1, G=6\n   New A=(7+1)=8, New B=(5+1)=6, New C=(4+1)=5, New D=(7+1)=8, New E=(2+1)=3, New F=(1+1)=2, New G=(6+1)=7\n   Step 5: [8, 6, 5, 8, 3, 2, 7]\n\nFINAL VALUE: 5",
+        "is_correct": true
+    }
+]

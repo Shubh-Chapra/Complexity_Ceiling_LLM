@@ -1,0 +1,352 @@
+[
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 5,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SHIFT_ROW_2_LEFT\n3. SWAP_CORNERS\n4. SHIFT_ROW_1_RIGHT\n5. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 9"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 5,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SWAP_CORNERS\n3. SHIFT_COL_2_DOWN\n4. SWAP_CORNERS\n5. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 5,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SWAP_CORNERS\n3. SWAP_EDGES\n4. SWAP_EDGES\n5. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 2"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 5,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SWAP_CORNERS\n4. REVERSE_GRID\n5. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 5,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SHIFT_ROW_1_RIGHT\n3. SHIFT_ROW_2_LEFT\n4. SHIFT_COL_2_DOWN\n5. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 3"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 10,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SHIFT_COL_2_DOWN\n3. SWAP_CORNERS\n4. SWAP_EDGES\n5. SWAP_EDGES\n6. SWAP_EDGES\n7. SWAP_EDGES\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_ROW_2_LEFT\n10. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 4"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 10,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_1_RIGHT\n5. REVERSE_GRID\n6. SHIFT_ROW_2_LEFT\n7. SWAP_CORNERS\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_COL_2_DOWN\n10. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 10,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. SHIFT_ROW_2_LEFT\n3. SWAP_CORNERS\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_COL_2_DOWN\n6. SHIFT_COL_2_DOWN\n7. SWAP_EDGES\n8. SWAP_EDGES\n9. SHIFT_ROW_2_LEFT\n10. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 10,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SWAP_EDGES\n4. SWAP_CORNERS\n5. SHIFT_ROW_1_RIGHT\n6. SWAP_CORNERS\n7. SWAP_CORNERS\n8. SHIFT_COL_2_DOWN\n9. SHIFT_ROW_1_RIGHT\n10. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 10,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SWAP_EDGES\n3. SHIFT_COL_2_DOWN\n4. SHIFT_COL_2_DOWN\n5. SWAP_CORNERS\n6. SHIFT_ROW_1_RIGHT\n7. SHIFT_ROW_2_LEFT\n8. SWAP_CORNERS\n9. SHIFT_ROW_2_LEFT\n10. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 15,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. REVERSE_GRID\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_COL_2_DOWN\n5. SHIFT_ROW_1_RIGHT\n6. REVERSE_GRID\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_ROW_1_RIGHT\n9. SHIFT_ROW_2_LEFT\n10. SHIFT_COL_2_DOWN\n11. REVERSE_GRID\n12. SHIFT_ROW_1_RIGHT\n13. SWAP_CORNERS\n14. SHIFT_ROW_2_LEFT\n15. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 15,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_2_LEFT\n6. SWAP_EDGES\n7. REVERSE_GRID\n8. SHIFT_COL_2_DOWN\n9. REVERSE_GRID\n10. SWAP_CORNERS\n11. SWAP_EDGES\n12. SWAP_CORNERS\n13. SWAP_CORNERS\n14. REVERSE_GRID\n15. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 2"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 15,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SHIFT_COL_2_DOWN\n4. SWAP_CORNERS\n5. SHIFT_ROW_1_RIGHT\n6. SWAP_EDGES\n7. SWAP_EDGES\n8. SHIFT_ROW_2_LEFT\n9. SWAP_CORNERS\n10. SHIFT_COL_2_DOWN\n11. SHIFT_ROW_1_RIGHT\n12. SWAP_EDGES\n13. REVERSE_GRID\n14. SWAP_CORNERS\n15. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 15,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. REVERSE_GRID\n3. SHIFT_COL_2_DOWN\n4. SHIFT_ROW_2_LEFT\n5. REVERSE_GRID\n6. SHIFT_COL_2_DOWN\n7. SWAP_EDGES\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_COL_2_DOWN\n10. SHIFT_ROW_2_LEFT\n11. REVERSE_GRID\n12. SWAP_CORNERS\n13. SWAP_CORNERS\n14. SHIFT_COL_2_DOWN\n15. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 15,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SWAP_CORNERS\n4. REVERSE_GRID\n5. SHIFT_ROW_1_RIGHT\n6. SHIFT_COL_2_DOWN\n7. SHIFT_COL_2_DOWN\n8. SWAP_CORNERS\n9. SHIFT_ROW_1_RIGHT\n10. SWAP_CORNERS\n11. SHIFT_COL_2_DOWN\n12. SHIFT_COL_2_DOWN\n13. SWAP_CORNERS\n14. REVERSE_GRID\n15. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 9"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 20,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SHIFT_COL_2_DOWN\n3. SHIFT_ROW_2_LEFT\n4. SWAP_EDGES\n5. SWAP_EDGES\n6. SHIFT_COL_2_DOWN\n7. REVERSE_GRID\n8. REVERSE_GRID\n9. SHIFT_COL_2_DOWN\n10. SHIFT_COL_2_DOWN\n11. SHIFT_COL_2_DOWN\n12. SWAP_CORNERS\n13. SWAP_EDGES\n14. REVERSE_GRID\n15. SWAP_EDGES\n16. SHIFT_COL_2_DOWN\n17. SHIFT_COL_2_DOWN\n18. SHIFT_COL_2_DOWN\n19. SHIFT_COL_2_DOWN\n20. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 20,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_1_RIGHT\n4. SWAP_EDGES\n5. SWAP_CORNERS\n6. SWAP_CORNERS\n7. SHIFT_COL_2_DOWN\n8. SWAP_EDGES\n9. SWAP_CORNERS\n10. REVERSE_GRID\n11. SWAP_EDGES\n12. SHIFT_ROW_2_LEFT\n13. REVERSE_GRID\n14. SHIFT_ROW_1_RIGHT\n15. SWAP_EDGES\n16. SWAP_EDGES\n17. SWAP_CORNERS\n18. SWAP_CORNERS\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 20,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SHIFT_COL_2_DOWN\n3. SHIFT_COL_2_DOWN\n4. REVERSE_GRID\n5. SWAP_CORNERS\n6. SHIFT_COL_2_DOWN\n7. SHIFT_ROW_1_RIGHT\n8. SWAP_CORNERS\n9. REVERSE_GRID\n10. SHIFT_ROW_2_LEFT\n11. SWAP_CORNERS\n12. SWAP_CORNERS\n13. SHIFT_ROW_1_RIGHT\n14. SWAP_CORNERS\n15. SWAP_EDGES\n16. SWAP_EDGES\n17. SHIFT_ROW_2_LEFT\n18. SHIFT_COL_2_DOWN\n19. SWAP_EDGES\n20. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 7"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 20,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SHIFT_COL_2_DOWN\n3. SWAP_CORNERS\n4. REVERSE_GRID\n5. REVERSE_GRID\n6. SWAP_CORNERS\n7. SWAP_EDGES\n8. SHIFT_ROW_2_LEFT\n9. REVERSE_GRID\n10. SWAP_EDGES\n11. SHIFT_ROW_1_RIGHT\n12. SHIFT_ROW_2_LEFT\n13. SHIFT_ROW_2_LEFT\n14. REVERSE_GRID\n15. REVERSE_GRID\n16. SWAP_EDGES\n17. SWAP_CORNERS\n18. SHIFT_COL_2_DOWN\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 4"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 20,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SWAP_CORNERS\n4. SWAP_CORNERS\n5. REVERSE_GRID\n6. SHIFT_COL_2_DOWN\n7. REVERSE_GRID\n8. SWAP_EDGES\n9. SHIFT_ROW_2_LEFT\n10. SHIFT_ROW_2_LEFT\n11. SWAP_EDGES\n12. REVERSE_GRID\n13. SHIFT_ROW_1_RIGHT\n14. SWAP_EDGES\n15. SHIFT_ROW_2_LEFT\n16. REVERSE_GRID\n17. REVERSE_GRID\n18. SHIFT_ROW_2_LEFT\n19. SHIFT_COL_2_DOWN\n20. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 25,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SHIFT_ROW_2_LEFT\n3. REVERSE_GRID\n4. REVERSE_GRID\n5. SWAP_EDGES\n6. SHIFT_ROW_2_LEFT\n7. SWAP_EDGES\n8. SWAP_EDGES\n9. SHIFT_ROW_2_LEFT\n10. SWAP_CORNERS\n11. SHIFT_COL_2_DOWN\n12. SHIFT_ROW_1_RIGHT\n13. SHIFT_COL_2_DOWN\n14. SWAP_EDGES\n15. SWAP_CORNERS\n16. SHIFT_ROW_1_RIGHT\n17. REVERSE_GRID\n18. SWAP_EDGES\n19. SHIFT_ROW_2_LEFT\n20. SWAP_CORNERS\n21. SHIFT_COL_2_DOWN\n22. SWAP_EDGES\n23. SHIFT_COL_2_DOWN\n24. REVERSE_GRID\n25. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 25,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. REVERSE_GRID\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_1_RIGHT\n5. SWAP_EDGES\n6. SHIFT_COL_2_DOWN\n7. SWAP_EDGES\n8. SHIFT_COL_2_DOWN\n9. SWAP_CORNERS\n10. SHIFT_ROW_2_LEFT\n11. SHIFT_COL_2_DOWN\n12. SHIFT_ROW_2_LEFT\n13. SWAP_EDGES\n14. REVERSE_GRID\n15. SHIFT_ROW_1_RIGHT\n16. SHIFT_ROW_1_RIGHT\n17. REVERSE_GRID\n18. SWAP_CORNERS\n19. SHIFT_COL_2_DOWN\n20. SHIFT_ROW_1_RIGHT\n21. SWAP_EDGES\n22. SHIFT_ROW_2_LEFT\n23. SWAP_CORNERS\n24. REVERSE_GRID\n25. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 25,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SWAP_EDGES\n3. REVERSE_GRID\n4. SWAP_CORNERS\n5. SWAP_EDGES\n6. REVERSE_GRID\n7. SWAP_CORNERS\n8. SHIFT_COL_2_DOWN\n9. SWAP_EDGES\n10. SHIFT_COL_2_DOWN\n11. REVERSE_GRID\n12. SHIFT_ROW_1_RIGHT\n13. SWAP_CORNERS\n14. SHIFT_COL_2_DOWN\n15. REVERSE_GRID\n16. REVERSE_GRID\n17. SHIFT_ROW_1_RIGHT\n18. SHIFT_COL_2_DOWN\n19. SHIFT_COL_2_DOWN\n20. SHIFT_ROW_1_RIGHT\n21. SHIFT_ROW_1_RIGHT\n22. SHIFT_COL_2_DOWN\n23. SHIFT_ROW_2_LEFT\n24. SHIFT_ROW_1_RIGHT\n25. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 25,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SWAP_EDGES\n3. SHIFT_ROW_1_RIGHT\n4. REVERSE_GRID\n5. REVERSE_GRID\n6. SHIFT_COL_2_DOWN\n7. SWAP_CORNERS\n8. SWAP_CORNERS\n9. SWAP_CORNERS\n10. SWAP_EDGES\n11. SWAP_CORNERS\n12. SHIFT_ROW_2_LEFT\n13. SHIFT_ROW_2_LEFT\n14. REVERSE_GRID\n15. SWAP_CORNERS\n16. REVERSE_GRID\n17. SWAP_EDGES\n18. SHIFT_COL_2_DOWN\n19. SWAP_EDGES\n20. SHIFT_ROW_1_RIGHT\n21. SHIFT_COL_2_DOWN\n22. SWAP_EDGES\n23. REVERSE_GRID\n24. SHIFT_ROW_1_RIGHT\n25. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 3"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 25,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. SHIFT_ROW_1_RIGHT\n3. SHIFT_ROW_2_LEFT\n4. REVERSE_GRID\n5. SHIFT_COL_2_DOWN\n6. SHIFT_COL_2_DOWN\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_ROW_1_RIGHT\n9. SWAP_CORNERS\n10. SWAP_EDGES\n11. REVERSE_GRID\n12. SWAP_CORNERS\n13. SWAP_CORNERS\n14. SHIFT_COL_2_DOWN\n15. SHIFT_ROW_1_RIGHT\n16. SWAP_CORNERS\n17. SWAP_CORNERS\n18. SHIFT_ROW_2_LEFT\n19. SWAP_CORNERS\n20. SHIFT_ROW_2_LEFT\n21. SHIFT_COL_2_DOWN\n22. REVERSE_GRID\n23. SWAP_CORNERS\n24. SWAP_EDGES\n25. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 7"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 30,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_2_LEFT\n5. SWAP_CORNERS\n6. SWAP_CORNERS\n7. REVERSE_GRID\n8. REVERSE_GRID\n9. SWAP_CORNERS\n10. SWAP_EDGES\n11. REVERSE_GRID\n12. SWAP_CORNERS\n13. SHIFT_ROW_2_LEFT\n14. SHIFT_ROW_1_RIGHT\n15. SHIFT_ROW_2_LEFT\n16. SWAP_EDGES\n17. REVERSE_GRID\n18. SWAP_EDGES\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_ROW_1_RIGHT\n21. SWAP_EDGES\n22. REVERSE_GRID\n23. SWAP_EDGES\n24. SWAP_EDGES\n25. REVERSE_GRID\n26. SHIFT_ROW_2_LEFT\n27. SHIFT_COL_2_DOWN\n28. SWAP_EDGES\n29. SWAP_EDGES\n30. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 3"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 30,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. SWAP_CORNERS\n3. REVERSE_GRID\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_1_RIGHT\n6. SWAP_CORNERS\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_COL_2_DOWN\n9. SWAP_CORNERS\n10. SWAP_EDGES\n11. REVERSE_GRID\n12. REVERSE_GRID\n13. REVERSE_GRID\n14. REVERSE_GRID\n15. SWAP_EDGES\n16. SWAP_EDGES\n17. SHIFT_ROW_1_RIGHT\n18. REVERSE_GRID\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_COL_2_DOWN\n21. SWAP_CORNERS\n22. SHIFT_ROW_2_LEFT\n23. REVERSE_GRID\n24. SWAP_CORNERS\n25. SHIFT_COL_2_DOWN\n26. SHIFT_COL_2_DOWN\n27. SWAP_CORNERS\n28. REVERSE_GRID\n29. SWAP_EDGES\n30. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 4"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 30,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SWAP_EDGES\n3. SWAP_EDGES\n4. SWAP_EDGES\n5. SHIFT_ROW_2_LEFT\n6. SWAP_EDGES\n7. REVERSE_GRID\n8. SHIFT_ROW_1_RIGHT\n9. SWAP_CORNERS\n10. SWAP_CORNERS\n11. SWAP_EDGES\n12. SHIFT_ROW_1_RIGHT\n13. SWAP_CORNERS\n14. SWAP_CORNERS\n15. SWAP_EDGES\n16. REVERSE_GRID\n17. REVERSE_GRID\n18. SHIFT_COL_2_DOWN\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_ROW_1_RIGHT\n21. REVERSE_GRID\n22. SHIFT_ROW_1_RIGHT\n23. REVERSE_GRID\n24. SHIFT_ROW_1_RIGHT\n25. SWAP_EDGES\n26. SHIFT_COL_2_DOWN\n27. SHIFT_COL_2_DOWN\n28. SHIFT_COL_2_DOWN\n29. SWAP_CORNERS\n30. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 7"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 30,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. REVERSE_GRID\n3. SHIFT_ROW_2_LEFT\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_2_LEFT\n6. SHIFT_ROW_1_RIGHT\n7. SWAP_CORNERS\n8. SHIFT_ROW_1_RIGHT\n9. REVERSE_GRID\n10. SHIFT_COL_2_DOWN\n11. SHIFT_ROW_2_LEFT\n12. SWAP_EDGES\n13. SHIFT_ROW_1_RIGHT\n14. SHIFT_ROW_2_LEFT\n15. SHIFT_COL_2_DOWN\n16. SHIFT_COL_2_DOWN\n17. SHIFT_ROW_2_LEFT\n18. SWAP_EDGES\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_ROW_1_RIGHT\n21. SHIFT_ROW_1_RIGHT\n22. SWAP_CORNERS\n23. SHIFT_COL_2_DOWN\n24. REVERSE_GRID\n25. SHIFT_ROW_2_LEFT\n26. SWAP_CORNERS\n27. SHIFT_COL_2_DOWN\n28. SWAP_CORNERS\n29. SWAP_EDGES\n30. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 30,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SHIFT_COL_2_DOWN\n4. SWAP_CORNERS\n5. SHIFT_ROW_1_RIGHT\n6. SWAP_EDGES\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_ROW_2_LEFT\n9. REVERSE_GRID\n10. REVERSE_GRID\n11. SHIFT_ROW_1_RIGHT\n12. SHIFT_ROW_1_RIGHT\n13. REVERSE_GRID\n14. REVERSE_GRID\n15. REVERSE_GRID\n16. SHIFT_ROW_2_LEFT\n17. SWAP_EDGES\n18. SWAP_CORNERS\n19. SHIFT_COL_2_DOWN\n20. SWAP_CORNERS\n21. REVERSE_GRID\n22. SHIFT_ROW_2_LEFT\n23. SHIFT_COL_2_DOWN\n24. SWAP_EDGES\n25. SHIFT_COL_2_DOWN\n26. SHIFT_COL_2_DOWN\n27. SHIFT_COL_2_DOWN\n28. REVERSE_GRID\n29. SWAP_CORNERS\n30. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 35,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SHIFT_COL_2_DOWN\n3. SWAP_EDGES\n4. REVERSE_GRID\n5. SWAP_EDGES\n6. SHIFT_COL_2_DOWN\n7. REVERSE_GRID\n8. SWAP_CORNERS\n9. SHIFT_ROW_1_RIGHT\n10. SHIFT_COL_2_DOWN\n11. SWAP_CORNERS\n12. SHIFT_ROW_2_LEFT\n13. SWAP_EDGES\n14. REVERSE_GRID\n15. REVERSE_GRID\n16. SHIFT_ROW_1_RIGHT\n17. SWAP_CORNERS\n18. REVERSE_GRID\n19. SHIFT_ROW_1_RIGHT\n20. SWAP_EDGES\n21. SHIFT_COL_2_DOWN\n22. REVERSE_GRID\n23. SWAP_EDGES\n24. SHIFT_COL_2_DOWN\n25. SWAP_CORNERS\n26. REVERSE_GRID\n27. SHIFT_ROW_1_RIGHT\n28. SHIFT_ROW_2_LEFT\n29. SHIFT_ROW_2_LEFT\n30. SWAP_CORNERS\n31. SHIFT_COL_2_DOWN\n32. SWAP_EDGES\n33. SHIFT_COL_2_DOWN\n34. REVERSE_GRID\n35. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 9"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 35,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SHIFT_ROW_1_RIGHT\n3. SHIFT_ROW_1_RIGHT\n4. SWAP_EDGES\n5. SHIFT_ROW_1_RIGHT\n6. SHIFT_ROW_2_LEFT\n7. SHIFT_COL_2_DOWN\n8. SHIFT_COL_2_DOWN\n9. SHIFT_ROW_1_RIGHT\n10. REVERSE_GRID\n11. SHIFT_COL_2_DOWN\n12. SHIFT_ROW_1_RIGHT\n13. SHIFT_ROW_1_RIGHT\n14. SWAP_CORNERS\n15. SHIFT_COL_2_DOWN\n16. SWAP_EDGES\n17. REVERSE_GRID\n18. SWAP_EDGES\n19. SWAP_CORNERS\n20. REVERSE_GRID\n21. SHIFT_ROW_1_RIGHT\n22. REVERSE_GRID\n23. SWAP_EDGES\n24. SHIFT_ROW_1_RIGHT\n25. SHIFT_COL_2_DOWN\n26. SHIFT_COL_2_DOWN\n27. SWAP_CORNERS\n28. SWAP_EDGES\n29. SWAP_CORNERS\n30. SWAP_CORNERS\n31. SHIFT_ROW_1_RIGHT\n32. REVERSE_GRID\n33. REVERSE_GRID\n34. REVERSE_GRID\n35. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 35,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SHIFT_ROW_2_LEFT\n3. SWAP_EDGES\n4. REVERSE_GRID\n5. SWAP_EDGES\n6. SWAP_CORNERS\n7. SWAP_EDGES\n8. REVERSE_GRID\n9. SWAP_CORNERS\n10. SHIFT_ROW_1_RIGHT\n11. SHIFT_COL_2_DOWN\n12. SWAP_EDGES\n13. SHIFT_ROW_2_LEFT\n14. SWAP_EDGES\n15. REVERSE_GRID\n16. SWAP_EDGES\n17. SHIFT_ROW_1_RIGHT\n18. SWAP_EDGES\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_COL_2_DOWN\n21. SHIFT_COL_2_DOWN\n22. SHIFT_ROW_2_LEFT\n23. REVERSE_GRID\n24. SWAP_EDGES\n25. SWAP_EDGES\n26. SWAP_EDGES\n27. SHIFT_ROW_1_RIGHT\n28. SWAP_CORNERS\n29. SHIFT_ROW_2_LEFT\n30. SWAP_CORNERS\n31. REVERSE_GRID\n32. SWAP_CORNERS\n33. SHIFT_COL_2_DOWN\n34. SWAP_EDGES\n35. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 35,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. REVERSE_GRID\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_1_RIGHT\n5. REVERSE_GRID\n6. SHIFT_COL_2_DOWN\n7. SWAP_CORNERS\n8. SWAP_CORNERS\n9. REVERSE_GRID\n10. SHIFT_ROW_2_LEFT\n11. SWAP_EDGES\n12. REVERSE_GRID\n13. SHIFT_ROW_1_RIGHT\n14. REVERSE_GRID\n15. REVERSE_GRID\n16. SHIFT_COL_2_DOWN\n17. REVERSE_GRID\n18. SHIFT_COL_2_DOWN\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_ROW_2_LEFT\n21. SHIFT_ROW_1_RIGHT\n22. SHIFT_COL_2_DOWN\n23. SWAP_EDGES\n24. SHIFT_ROW_2_LEFT\n25. SHIFT_ROW_1_RIGHT\n26. SHIFT_COL_2_DOWN\n27. SWAP_CORNERS\n28. SHIFT_COL_2_DOWN\n29. SHIFT_COL_2_DOWN\n30. SHIFT_ROW_1_RIGHT\n31. SHIFT_ROW_1_RIGHT\n32. SHIFT_ROW_2_LEFT\n33. SWAP_CORNERS\n34. SHIFT_COL_2_DOWN\n35. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 35,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SHIFT_COL_2_DOWN\n4. SWAP_EDGES\n5. SWAP_CORNERS\n6. SHIFT_COL_2_DOWN\n7. SHIFT_ROW_2_LEFT\n8. SWAP_CORNERS\n9. SWAP_EDGES\n10. SHIFT_COL_2_DOWN\n11. SHIFT_ROW_1_RIGHT\n12. SWAP_CORNERS\n13. SHIFT_COL_2_DOWN\n14. SHIFT_COL_2_DOWN\n15. SWAP_EDGES\n16. SHIFT_ROW_1_RIGHT\n17. REVERSE_GRID\n18. SHIFT_ROW_2_LEFT\n19. SHIFT_COL_2_DOWN\n20. SWAP_CORNERS\n21. SHIFT_COL_2_DOWN\n22. SWAP_CORNERS\n23. SWAP_CORNERS\n24. SWAP_EDGES\n25. SWAP_CORNERS\n26. SHIFT_ROW_1_RIGHT\n27. SHIFT_COL_2_DOWN\n28. SHIFT_ROW_1_RIGHT\n29. SHIFT_COL_2_DOWN\n30. SHIFT_ROW_1_RIGHT\n31. SHIFT_COL_2_DOWN\n32. SWAP_EDGES\n33. REVERSE_GRID\n34. SHIFT_ROW_2_LEFT\n35. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 4"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 40,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_ROW_1_RIGHT\n3. REVERSE_GRID\n4. SWAP_CORNERS\n5. SWAP_EDGES\n6. SWAP_CORNERS\n7. SHIFT_COL_2_DOWN\n8. SWAP_EDGES\n9. SHIFT_COL_2_DOWN\n10. SHIFT_ROW_2_LEFT\n11. SWAP_CORNERS\n12. REVERSE_GRID\n13. SHIFT_COL_2_DOWN\n14. SWAP_EDGES\n15. SHIFT_COL_2_DOWN\n16. SWAP_CORNERS\n17. SHIFT_COL_2_DOWN\n18. REVERSE_GRID\n19. SWAP_EDGES\n20. SHIFT_ROW_2_LEFT\n21. SHIFT_ROW_2_LEFT\n22. SWAP_CORNERS\n23. SHIFT_ROW_2_LEFT\n24. SWAP_EDGES\n25. SHIFT_ROW_2_LEFT\n26. SHIFT_ROW_1_RIGHT\n27. SHIFT_COL_2_DOWN\n28. SHIFT_COL_2_DOWN\n29. SHIFT_COL_2_DOWN\n30. SHIFT_COL_2_DOWN\n31. SHIFT_ROW_2_LEFT\n32. SWAP_EDGES\n33. REVERSE_GRID\n34. SHIFT_ROW_2_LEFT\n35. SHIFT_COL_2_DOWN\n36. SHIFT_ROW_2_LEFT\n37. SHIFT_COL_2_DOWN\n38. SWAP_EDGES\n39. SHIFT_COL_2_DOWN\n40. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 40,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_ROW_1_RIGHT\n3. SHIFT_ROW_2_LEFT\n4. SHIFT_COL_2_DOWN\n5. SHIFT_ROW_2_LEFT\n6. SWAP_CORNERS\n7. SHIFT_ROW_1_RIGHT\n8. SHIFT_ROW_1_RIGHT\n9. SHIFT_ROW_1_RIGHT\n10. SWAP_EDGES\n11. SWAP_EDGES\n12. SHIFT_ROW_2_LEFT\n13. SWAP_CORNERS\n14. SWAP_EDGES\n15. SHIFT_COL_2_DOWN\n16. SWAP_EDGES\n17. REVERSE_GRID\n18. SHIFT_COL_2_DOWN\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_ROW_2_LEFT\n21. SWAP_EDGES\n22. SHIFT_ROW_1_RIGHT\n23. SWAP_CORNERS\n24. SHIFT_ROW_1_RIGHT\n25. SHIFT_ROW_1_RIGHT\n26. SWAP_CORNERS\n27. SWAP_CORNERS\n28. SWAP_EDGES\n29. SWAP_EDGES\n30. REVERSE_GRID\n31. SHIFT_COL_2_DOWN\n32. SHIFT_ROW_2_LEFT\n33. SHIFT_ROW_2_LEFT\n34. SWAP_EDGES\n35. SHIFT_ROW_1_RIGHT\n36. SHIFT_COL_2_DOWN\n37. SWAP_CORNERS\n38. SWAP_EDGES\n39. SHIFT_COL_2_DOWN\n40. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 2"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 40,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SHIFT_ROW_1_RIGHT\n3. REVERSE_GRID\n4. SWAP_CORNERS\n5. REVERSE_GRID\n6. SHIFT_ROW_2_LEFT\n7. SHIFT_ROW_2_LEFT\n8. REVERSE_GRID\n9. SHIFT_ROW_2_LEFT\n10. SWAP_CORNERS\n11. SHIFT_ROW_2_LEFT\n12. SWAP_EDGES\n13. SHIFT_ROW_1_RIGHT\n14. SHIFT_COL_2_DOWN\n15. SWAP_CORNERS\n16. SHIFT_ROW_2_LEFT\n17. SHIFT_COL_2_DOWN\n18. SWAP_EDGES\n19. REVERSE_GRID\n20. SWAP_EDGES\n21. SHIFT_COL_2_DOWN\n22. SWAP_CORNERS\n23. REVERSE_GRID\n24. SWAP_CORNERS\n25. SHIFT_COL_2_DOWN\n26. SHIFT_COL_2_DOWN\n27. SHIFT_ROW_1_RIGHT\n28. SHIFT_COL_2_DOWN\n29. REVERSE_GRID\n30. SHIFT_ROW_1_RIGHT\n31. REVERSE_GRID\n32. SWAP_CORNERS\n33. SWAP_EDGES\n34. SWAP_EDGES\n35. SWAP_CORNERS\n36. SHIFT_ROW_2_LEFT\n37. SHIFT_ROW_1_RIGHT\n38. SHIFT_ROW_2_LEFT\n39. SHIFT_COL_2_DOWN\n40. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 40,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SWAP_CORNERS\n3. SHIFT_ROW_2_LEFT\n4. REVERSE_GRID\n5. REVERSE_GRID\n6. REVERSE_GRID\n7. REVERSE_GRID\n8. SHIFT_ROW_2_LEFT\n9. SWAP_CORNERS\n10. SHIFT_COL_2_DOWN\n11. SWAP_EDGES\n12. SWAP_EDGES\n13. SWAP_EDGES\n14. SHIFT_COL_2_DOWN\n15. SWAP_EDGES\n16. REVERSE_GRID\n17. SHIFT_ROW_1_RIGHT\n18. SHIFT_ROW_1_RIGHT\n19. SHIFT_ROW_2_LEFT\n20. SHIFT_COL_2_DOWN\n21. SWAP_EDGES\n22. SWAP_EDGES\n23. SWAP_EDGES\n24. SHIFT_COL_2_DOWN\n25. SHIFT_ROW_2_LEFT\n26. SWAP_CORNERS\n27. SWAP_CORNERS\n28. SWAP_CORNERS\n29. SHIFT_ROW_2_LEFT\n30. SHIFT_ROW_2_LEFT\n31. SHIFT_COL_2_DOWN\n32. SWAP_EDGES\n33. REVERSE_GRID\n34. SWAP_EDGES\n35. SWAP_EDGES\n36. SHIFT_ROW_1_RIGHT\n37. REVERSE_GRID\n38. SWAP_CORNERS\n39. REVERSE_GRID\n40. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 8"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 40,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_2_LEFT\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_1_RIGHT\n6. SHIFT_ROW_1_RIGHT\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_ROW_1_RIGHT\n9. SHIFT_COL_2_DOWN\n10. SHIFT_ROW_1_RIGHT\n11. SWAP_CORNERS\n12. REVERSE_GRID\n13. SWAP_CORNERS\n14. SWAP_EDGES\n15. SHIFT_ROW_2_LEFT\n16. SWAP_CORNERS\n17. SHIFT_ROW_2_LEFT\n18. SHIFT_COL_2_DOWN\n19. SWAP_CORNERS\n20. SWAP_EDGES\n21. SWAP_EDGES\n22. SWAP_EDGES\n23. SHIFT_ROW_2_LEFT\n24. SHIFT_COL_2_DOWN\n25. SHIFT_ROW_1_RIGHT\n26. SHIFT_ROW_2_LEFT\n27. SHIFT_ROW_1_RIGHT\n28. SWAP_EDGES\n29. SHIFT_COL_2_DOWN\n30. REVERSE_GRID\n31. SHIFT_ROW_1_RIGHT\n32. SHIFT_COL_2_DOWN\n33. REVERSE_GRID\n34. SWAP_CORNERS\n35. SHIFT_ROW_2_LEFT\n36. SHIFT_ROW_1_RIGHT\n37. SWAP_EDGES\n38. SHIFT_ROW_2_LEFT\n39. SWAP_CORNERS\n40. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 3"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 45,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. REVERSE_GRID\n3. SWAP_EDGES\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_1_RIGHT\n6. SHIFT_ROW_2_LEFT\n7. SWAP_CORNERS\n8. SWAP_EDGES\n9. SWAP_EDGES\n10. REVERSE_GRID\n11. SWAP_CORNERS\n12. REVERSE_GRID\n13. REVERSE_GRID\n14. SHIFT_ROW_2_LEFT\n15. SHIFT_ROW_2_LEFT\n16. SWAP_CORNERS\n17. SWAP_EDGES\n18. REVERSE_GRID\n19. SWAP_EDGES\n20. SWAP_EDGES\n21. REVERSE_GRID\n22. REVERSE_GRID\n23. SWAP_EDGES\n24. SHIFT_ROW_1_RIGHT\n25. SWAP_CORNERS\n26. SHIFT_COL_2_DOWN\n27. SWAP_EDGES\n28. SHIFT_ROW_2_LEFT\n29. SHIFT_ROW_2_LEFT\n30. SHIFT_COL_2_DOWN\n31. SHIFT_COL_2_DOWN\n32. SWAP_CORNERS\n33. SHIFT_ROW_1_RIGHT\n34. SWAP_CORNERS\n35. SWAP_CORNERS\n36. SHIFT_ROW_1_RIGHT\n37. SWAP_EDGES\n38. SHIFT_ROW_2_LEFT\n39. SHIFT_ROW_1_RIGHT\n40. SHIFT_COL_2_DOWN\n41. REVERSE_GRID\n42. SWAP_CORNERS\n43. SHIFT_ROW_1_RIGHT\n44. SHIFT_COL_2_DOWN\n45. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 2"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 45,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_2_LEFT\n2. SWAP_CORNERS\n3. REVERSE_GRID\n4. SWAP_CORNERS\n5. REVERSE_GRID\n6. REVERSE_GRID\n7. SHIFT_ROW_2_LEFT\n8. SWAP_CORNERS\n9. SHIFT_ROW_1_RIGHT\n10. REVERSE_GRID\n11. SHIFT_ROW_2_LEFT\n12. REVERSE_GRID\n13. SWAP_CORNERS\n14. REVERSE_GRID\n15. REVERSE_GRID\n16. SWAP_EDGES\n17. SWAP_CORNERS\n18. REVERSE_GRID\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_COL_2_DOWN\n21. SWAP_CORNERS\n22. SWAP_EDGES\n23. SWAP_CORNERS\n24. SHIFT_ROW_1_RIGHT\n25. REVERSE_GRID\n26. SWAP_CORNERS\n27. REVERSE_GRID\n28. SWAP_EDGES\n29. SHIFT_ROW_1_RIGHT\n30. SHIFT_COL_2_DOWN\n31. REVERSE_GRID\n32. SHIFT_ROW_1_RIGHT\n33. SHIFT_ROW_1_RIGHT\n34. SHIFT_ROW_2_LEFT\n35. SHIFT_ROW_2_LEFT\n36. SHIFT_ROW_2_LEFT\n37. REVERSE_GRID\n38. SWAP_EDGES\n39. SHIFT_ROW_2_LEFT\n40. SWAP_EDGES\n41. SHIFT_ROW_1_RIGHT\n42. SWAP_EDGES\n43. SWAP_EDGES\n44. SWAP_CORNERS\n45. SHIFT_COL_2_DOWN\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 45,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_CORNERS\n2. SHIFT_ROW_2_LEFT\n3. SHIFT_ROW_1_RIGHT\n4. SWAP_EDGES\n5. SHIFT_ROW_2_LEFT\n6. SWAP_CORNERS\n7. REVERSE_GRID\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_ROW_1_RIGHT\n10. SHIFT_ROW_2_LEFT\n11. SWAP_CORNERS\n12. SHIFT_ROW_2_LEFT\n13. REVERSE_GRID\n14. SWAP_CORNERS\n15. SHIFT_COL_2_DOWN\n16. SHIFT_COL_2_DOWN\n17. SWAP_EDGES\n18. REVERSE_GRID\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_COL_2_DOWN\n21. SWAP_EDGES\n22. SHIFT_ROW_2_LEFT\n23. SWAP_EDGES\n24. SWAP_EDGES\n25. SWAP_CORNERS\n26. SHIFT_ROW_1_RIGHT\n27. SWAP_CORNERS\n28. SHIFT_COL_2_DOWN\n29. SHIFT_ROW_2_LEFT\n30. REVERSE_GRID\n31. SHIFT_COL_2_DOWN\n32. SWAP_EDGES\n33. SHIFT_COL_2_DOWN\n34. REVERSE_GRID\n35. SHIFT_COL_2_DOWN\n36. SHIFT_COL_2_DOWN\n37. SHIFT_COL_2_DOWN\n38. SWAP_CORNERS\n39. REVERSE_GRID\n40. SHIFT_ROW_2_LEFT\n41. REVERSE_GRID\n42. SWAP_EDGES\n43. SHIFT_COL_2_DOWN\n44. SWAP_EDGES\n45. SHIFT_ROW_1_RIGHT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 45,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SHIFT_COL_2_DOWN\n3. REVERSE_GRID\n4. REVERSE_GRID\n5. SWAP_CORNERS\n6. SWAP_CORNERS\n7. REVERSE_GRID\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_ROW_1_RIGHT\n10. SHIFT_ROW_1_RIGHT\n11. REVERSE_GRID\n12. SWAP_EDGES\n13. SHIFT_ROW_2_LEFT\n14. SHIFT_ROW_2_LEFT\n15. SWAP_EDGES\n16. SWAP_CORNERS\n17. SHIFT_ROW_2_LEFT\n18. SHIFT_ROW_2_LEFT\n19. SWAP_EDGES\n20. REVERSE_GRID\n21. SWAP_CORNERS\n22. SHIFT_COL_2_DOWN\n23. SHIFT_COL_2_DOWN\n24. SHIFT_ROW_1_RIGHT\n25. SHIFT_ROW_2_LEFT\n26. SWAP_CORNERS\n27. SHIFT_COL_2_DOWN\n28. SHIFT_COL_2_DOWN\n29. SWAP_EDGES\n30. SHIFT_ROW_2_LEFT\n31. SWAP_EDGES\n32. SWAP_EDGES\n33. SHIFT_ROW_2_LEFT\n34. SHIFT_ROW_2_LEFT\n35. SWAP_EDGES\n36. SWAP_CORNERS\n37. SWAP_CORNERS\n38. REVERSE_GRID\n39. SHIFT_COL_2_DOWN\n40. SWAP_EDGES\n41. SHIFT_COL_2_DOWN\n42. SHIFT_ROW_2_LEFT\n43. REVERSE_GRID\n44. SHIFT_ROW_1_RIGHT\n45. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 45,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. SHIFT_ROW_2_LEFT\n3. SWAP_EDGES\n4. SWAP_EDGES\n5. REVERSE_GRID\n6. SHIFT_COL_2_DOWN\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_COL_2_DOWN\n9. SWAP_CORNERS\n10. SHIFT_ROW_1_RIGHT\n11. SHIFT_ROW_2_LEFT\n12. SHIFT_COL_2_DOWN\n13. SHIFT_ROW_2_LEFT\n14. SWAP_EDGES\n15. SHIFT_ROW_1_RIGHT\n16. REVERSE_GRID\n17. SHIFT_COL_2_DOWN\n18. SHIFT_ROW_2_LEFT\n19. SHIFT_ROW_2_LEFT\n20. REVERSE_GRID\n21. SHIFT_ROW_2_LEFT\n22. SHIFT_ROW_1_RIGHT\n23. SWAP_CORNERS\n24. SWAP_CORNERS\n25. REVERSE_GRID\n26. SWAP_EDGES\n27. REVERSE_GRID\n28. SHIFT_ROW_1_RIGHT\n29. SWAP_CORNERS\n30. SHIFT_ROW_1_RIGHT\n31. SHIFT_ROW_2_LEFT\n32. SHIFT_COL_2_DOWN\n33. SHIFT_ROW_1_RIGHT\n34. REVERSE_GRID\n35. SHIFT_COL_2_DOWN\n36. SHIFT_ROW_2_LEFT\n37. SHIFT_ROW_2_LEFT\n38. SHIFT_ROW_2_LEFT\n39. SWAP_EDGES\n40. SWAP_CORNERS\n41. SWAP_EDGES\n42. SHIFT_ROW_2_LEFT\n43. SHIFT_ROW_2_LEFT\n44. SWAP_EDGES\n45. SWAP_EDGES\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 6"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 50,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. REVERSE_GRID\n2. SHIFT_COL_2_DOWN\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_1_RIGHT\n5. SHIFT_COL_2_DOWN\n6. SHIFT_ROW_1_RIGHT\n7. SHIFT_COL_2_DOWN\n8. SWAP_EDGES\n9. SWAP_CORNERS\n10. SHIFT_ROW_2_LEFT\n11. SWAP_CORNERS\n12. SWAP_EDGES\n13. REVERSE_GRID\n14. SHIFT_COL_2_DOWN\n15. SWAP_CORNERS\n16. SHIFT_COL_2_DOWN\n17. SWAP_CORNERS\n18. SHIFT_ROW_2_LEFT\n19. SWAP_CORNERS\n20. SHIFT_ROW_2_LEFT\n21. SHIFT_ROW_1_RIGHT\n22. SHIFT_ROW_2_LEFT\n23. SHIFT_COL_2_DOWN\n24. SWAP_EDGES\n25. SHIFT_ROW_1_RIGHT\n26. REVERSE_GRID\n27. SWAP_CORNERS\n28. SHIFT_ROW_2_LEFT\n29. SHIFT_ROW_2_LEFT\n30. SWAP_CORNERS\n31. SWAP_EDGES\n32. REVERSE_GRID\n33. SWAP_CORNERS\n34. SHIFT_COL_2_DOWN\n35. REVERSE_GRID\n36. SWAP_EDGES\n37. SWAP_CORNERS\n38. SHIFT_ROW_1_RIGHT\n39. SHIFT_ROW_2_LEFT\n40. SHIFT_COL_2_DOWN\n41. REVERSE_GRID\n42. SHIFT_ROW_1_RIGHT\n43. SHIFT_ROW_2_LEFT\n44. SWAP_CORNERS\n45. SWAP_EDGES\n46. SHIFT_COL_2_DOWN\n47. SWAP_CORNERS\n48. SHIFT_ROW_2_LEFT\n49. SHIFT_ROW_1_RIGHT\n50. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 1"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 50,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SWAP_EDGES\n2. REVERSE_GRID\n3. REVERSE_GRID\n4. SHIFT_ROW_1_RIGHT\n5. SHIFT_ROW_2_LEFT\n6. SHIFT_COL_2_DOWN\n7. SHIFT_ROW_1_RIGHT\n8. SWAP_EDGES\n9. SWAP_CORNERS\n10. REVERSE_GRID\n11. SHIFT_ROW_1_RIGHT\n12. SWAP_EDGES\n13. SWAP_CORNERS\n14. SWAP_EDGES\n15. REVERSE_GRID\n16. REVERSE_GRID\n17. SHIFT_COL_2_DOWN\n18. SWAP_CORNERS\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_ROW_1_RIGHT\n21. SWAP_EDGES\n22. SWAP_CORNERS\n23. SHIFT_ROW_1_RIGHT\n24. SHIFT_COL_2_DOWN\n25. SHIFT_ROW_2_LEFT\n26. SHIFT_COL_2_DOWN\n27. SHIFT_ROW_1_RIGHT\n28. SWAP_CORNERS\n29. SWAP_EDGES\n30. SHIFT_COL_2_DOWN\n31. REVERSE_GRID\n32. SHIFT_COL_2_DOWN\n33. SWAP_CORNERS\n34. SHIFT_ROW_1_RIGHT\n35. SWAP_EDGES\n36. SWAP_EDGES\n37. SWAP_EDGES\n38. SHIFT_ROW_1_RIGHT\n39. SHIFT_ROW_2_LEFT\n40. SHIFT_ROW_1_RIGHT\n41. SWAP_EDGES\n42. SHIFT_COL_2_DOWN\n43. REVERSE_GRID\n44. SWAP_EDGES\n45. SHIFT_ROW_1_RIGHT\n46. SWAP_EDGES\n47. SWAP_EDGES\n48. SHIFT_ROW_1_RIGHT\n49. SWAP_CORNERS\n50. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 50,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. SWAP_EDGES\n3. SHIFT_ROW_1_RIGHT\n4. SHIFT_ROW_2_LEFT\n5. SHIFT_ROW_1_RIGHT\n6. SHIFT_ROW_2_LEFT\n7. SHIFT_ROW_2_LEFT\n8. SHIFT_ROW_2_LEFT\n9. SHIFT_ROW_2_LEFT\n10. SWAP_EDGES\n11. REVERSE_GRID\n12. SHIFT_ROW_1_RIGHT\n13. REVERSE_GRID\n14. SHIFT_COL_2_DOWN\n15. REVERSE_GRID\n16. SHIFT_ROW_2_LEFT\n17. SWAP_EDGES\n18. SWAP_EDGES\n19. SWAP_CORNERS\n20. SHIFT_COL_2_DOWN\n21. SWAP_EDGES\n22. SHIFT_COL_2_DOWN\n23. SWAP_EDGES\n24. SHIFT_ROW_2_LEFT\n25. SHIFT_ROW_2_LEFT\n26. SWAP_CORNERS\n27. SHIFT_COL_2_DOWN\n28. SHIFT_ROW_2_LEFT\n29. SHIFT_COL_2_DOWN\n30. REVERSE_GRID\n31. SWAP_CORNERS\n32. SWAP_CORNERS\n33. REVERSE_GRID\n34. SHIFT_ROW_2_LEFT\n35. SHIFT_COL_2_DOWN\n36. SHIFT_ROW_2_LEFT\n37. SWAP_CORNERS\n38. SHIFT_ROW_2_LEFT\n39. SHIFT_ROW_1_RIGHT\n40. REVERSE_GRID\n41. SWAP_EDGES\n42. SHIFT_ROW_2_LEFT\n43. SHIFT_COL_2_DOWN\n44. SWAP_EDGES\n45. SHIFT_ROW_1_RIGHT\n46. SWAP_CORNERS\n47. SWAP_CORNERS\n48. SHIFT_COL_2_DOWN\n49. SWAP_EDGES\n50. REVERSE_GRID\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 7"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 50,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_ROW_1_RIGHT\n2. REVERSE_GRID\n3. SWAP_CORNERS\n4. REVERSE_GRID\n5. SWAP_EDGES\n6. SHIFT_ROW_2_LEFT\n7. SHIFT_COL_2_DOWN\n8. SHIFT_COL_2_DOWN\n9. SHIFT_ROW_2_LEFT\n10. REVERSE_GRID\n11. SHIFT_ROW_1_RIGHT\n12. SHIFT_COL_2_DOWN\n13. REVERSE_GRID\n14. SHIFT_ROW_2_LEFT\n15. SWAP_CORNERS\n16. SHIFT_ROW_2_LEFT\n17. SHIFT_COL_2_DOWN\n18. SHIFT_ROW_1_RIGHT\n19. SHIFT_ROW_1_RIGHT\n20. SHIFT_ROW_1_RIGHT\n21. SHIFT_ROW_2_LEFT\n22. SHIFT_ROW_1_RIGHT\n23. SWAP_EDGES\n24. REVERSE_GRID\n25. SHIFT_ROW_1_RIGHT\n26. SHIFT_ROW_2_LEFT\n27. SHIFT_COL_2_DOWN\n28. SHIFT_ROW_1_RIGHT\n29. SHIFT_COL_2_DOWN\n30. SHIFT_ROW_2_LEFT\n31. SHIFT_ROW_2_LEFT\n32. SWAP_EDGES\n33. SHIFT_COL_2_DOWN\n34. SWAP_EDGES\n35. SWAP_CORNERS\n36. REVERSE_GRID\n37. SWAP_CORNERS\n38. SWAP_EDGES\n39. SWAP_CORNERS\n40. SHIFT_ROW_1_RIGHT\n41. SHIFT_ROW_1_RIGHT\n42. SWAP_EDGES\n43. SWAP_EDGES\n44. SHIFT_ROW_2_LEFT\n45. REVERSE_GRID\n46. SHIFT_ROW_2_LEFT\n47. REVERSE_GRID\n48. SWAP_EDGES\n49. REVERSE_GRID\n50. SWAP_CORNERS\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 5"
+    },
+    {
+        "task_type": "scaled_alien_grid",
+        "complexity_class": "O(N*M)",
+        "depth": 50,
+        "prompt": "Imagine a 3x3 grid numbered 1 to 9 sequentially from top-left to bottom-right. Row 1 is [1,2,3]. Row 2 is [4,5,6]. Row 3 is [7,8,9].\n\nApply the following operations in exact order. You must output the full 3x3 grid after EVERY single step to show your work.\n\n1. SHIFT_COL_2_DOWN\n2. SWAP_CORNERS\n3. SWAP_EDGES\n4. SHIFT_COL_2_DOWN\n5. SWAP_CORNERS\n6. SHIFT_ROW_1_RIGHT\n7. REVERSE_GRID\n8. REVERSE_GRID\n9. SHIFT_ROW_1_RIGHT\n10. SHIFT_ROW_1_RIGHT\n11. SHIFT_ROW_2_LEFT\n12. SWAP_CORNERS\n13. SWAP_EDGES\n14. SHIFT_ROW_2_LEFT\n15. SWAP_EDGES\n16. REVERSE_GRID\n17. SHIFT_ROW_2_LEFT\n18. SHIFT_COL_2_DOWN\n19. SWAP_EDGES\n20. REVERSE_GRID\n21. SWAP_CORNERS\n22. REVERSE_GRID\n23. SHIFT_COL_2_DOWN\n24. SWAP_CORNERS\n25. SWAP_CORNERS\n26. SHIFT_ROW_1_RIGHT\n27. SWAP_EDGES\n28. SHIFT_COL_2_DOWN\n29. SHIFT_ROW_2_LEFT\n30. SHIFT_ROW_1_RIGHT\n31. REVERSE_GRID\n32. SHIFT_ROW_2_LEFT\n33. REVERSE_GRID\n34. SWAP_EDGES\n35. SHIFT_COL_2_DOWN\n36. SHIFT_COL_2_DOWN\n37. REVERSE_GRID\n38. REVERSE_GRID\n39. SWAP_CORNERS\n40. SHIFT_ROW_1_RIGHT\n41. SHIFT_ROW_1_RIGHT\n42. SHIFT_ROW_2_LEFT\n43. REVERSE_GRID\n44. SWAP_EDGES\n45. SWAP_EDGES\n46. SWAP_CORNERS\n47. SWAP_CORNERS\n48. SHIFT_ROW_2_LEFT\n49. SHIFT_COL_2_DOWN\n50. SHIFT_ROW_2_LEFT\n\nWhat is the final number in the exact center of the grid (Row 2, Column 2)? End your response with: 'FINAL CENTER: X' where X is the single digit.",
+        "ground_truth": "FINAL CENTER: 4"
+    }
+]
